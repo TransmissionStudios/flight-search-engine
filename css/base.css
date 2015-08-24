@@ -321,17 +321,62 @@ td, th {
 ul, ol {
   padding-left: 1.5em; }
 
+html {
+  width: 100%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
 header {
   display: block;
-  border: 1px solid red; }
+  border: 1px solid red;
+  padding: 0 1em; }
 
 main {
   display: block;
-  border: 1px solid blue; }
+  border: 1px solid blue;
+  padding: 0 1em; }
 
 aside {
   display: block;
-  border: 1px solid green; }
+  border: 1px solid green;
+  padding: 0 1em; }
+
+@media screen and (min-width: 48em) {
+  main {
+    float: right;
+    width: 80%; }
+  aside {
+    float: left;
+    width: 20%; } }
+
+h1 {
+  display: inline-block; }
+
+.results__depart {
+  border: 1px solid red; }
+
+.results__times {
+  display: block; }
+
+.results__indicator {
+  display: inline-block;
+  width: 3.5em; }
+
+.results__time {
+  display: inline-block; }
+
+@media screen and (min-width: 48em) {
+  .results__depart {
+    display: inline-block;
+    float: right;
+    width: 20%;
+    margin-right: 2%; } }
 
 .result__provider {
   display: inline-block;
@@ -365,6 +410,16 @@ aside {
     display: inline-block;
     position: relative;
     top: -2em; } }
+
+form label {
+  display: block; }
+form input {
+  display: block;
+  width: 100%; }
+form select {
+  width: 100%; }
+form button {
+  display: block; }
 
 
 /*# sourceMappingURL=base.css.map */

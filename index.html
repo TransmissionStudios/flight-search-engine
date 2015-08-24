@@ -9,71 +9,124 @@
   <title>Flight search engine</title>
 </head>
 <body>
-  <header class="header" role="banner">Flight Search Engine</header>
-  <main role="main" class="results">
-    <h1>Your Results</h1>
-    <div class="results__info">
-      Depart: 1st Jan 2014
-      Return: 10th Jan 2014
-    </div>
-    <!--start result-->
-    <div class="result">
-      <img src="images/logo-emirates.png" alt="Emirates" class="result__provider">
-      <div class="result__outbound">
-        <div class="result__flight-no">
-          Al-202
-        </div>
-        <div class="result__code">
-          PNQ > DEL
-        </div>
-        <div class="result__times">
-          <div class="result__indicator">
+  <div class="container">
+    <header class="header" role="banner">Flight Search Engine</header>
+    <!--start results-->
+    <main role="main" class="results">
+      <h1>Your Results</h1>
+      <div class="results__depart">
+        <div class="results__times">
+          <div class="results__indicator">
             Depart:
           </div>
-          <div class="result__time">
-            10:00 AM
+          <div class="results__time">
+            1st Jan 2014
           </div>
         </div>
-        <div class="result__times">
-          <div class="result__indicator">
-            Arrive:
+        <div class="results__times">
+          <div class="results__indicator">
+            Return:
           </div>
-          <div class="result__time">
-            12:00 PM
-          </div>
-        </div>
-      </div>
-      <div class="result__inbound">
-        <div class="result__flight-no">
-          Al-202
-        </div>
-        <div class="result__code">
-          DEL > PNQ
-        </div>
-        <div class="result__times">
-          <div class="result__indicator">
-            Depart:
-          </div>
-          <div class="result__time">
-            10:00 AM
-          </div>
-        </div>
-        <div class="result__times">
-          <div class="result__indicator">
-            Arrive:
-          </div>
-          <div class="result__time">
-            12:00 PM
+          <div class="results__time">
+            10th Jan 2014
           </div>
         </div>
       </div>
-      <div class="result__price">
-        £125.00
+      <!--start result-->
+      <div class="result">
+        <img src="images/logo-emirates.png" alt="Emirates" class="result__provider">
+        <div class="result__outbound">
+          <div class="result__flight-no">
+            Al-202
+          </div>
+          <div class="result__code">
+            PNQ > DEL
+          </div>
+          <div class="result__times">
+            <div class="result__indicator">
+              Depart:
+            </div>
+            <div class="result__time">
+              10:00 AM
+            </div>
+          </div>
+          <div class="result__times">
+            <div class="result__indicator">
+              Arrive:
+            </div>
+            <div class="result__time">
+              12:00 PM
+            </div>
+          </div>
+        </div>
+        <div class="result__inbound">
+          <div class="result__flight-no">
+            Al-202
+          </div>
+          <div class="result__code">
+            DEL > PNQ
+          </div>
+          <div class="result__times">
+            <div class="result__indicator">
+              Depart:
+            </div>
+            <div class="result__time">
+              10:00 AM
+            </div>
+          </div>
+          <div class="result__times">
+            <div class="result__indicator">
+              Arrive:
+            </div>
+            <div class="result__time">
+              12:00 PM
+            </div>
+          </div>
+        </div>
+        <div class="result__price">
+          £125.00
+        </div>
+        <button class="result__select">Select this flight</button>
       </div>
-      <button class="result__select">Select this flight</button>
-    </div>
-    <!--end result-->
-  </main>
-  <aside class="search"></aside>
+      <!--end result-->
+    </main>
+    <!--start search-->
+    <aside class="search">
+      <tabs>
+        <tab>One way</tab>
+        <tab>Return</tab>
+      </tabs>
+      <form action="#" class="search">
+        <label for="from">From</label><input type="text" id="from">
+        <label for="destination">Destination</label><input type="text" id="destination">
+        <label for="departure">Departure Date</label>
+        <select id="departure">
+        </select>
+        <label for="return">Return Date</label>
+        <select id="return">
+        </select>
+        <label for="passengers">Passengers</label>
+        <select id="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10+">10+</option>
+        </select>
+        <button class="search__submit">Search</button>
+      </form>
+      <!--end search-->
+      <!--start refine-search-->
+      <div class="refine-search">
+        Refine Flight Search
+      </div>
+      <!--end refine search-->
+    </aside>
+  </div>
 </body>
 </html>

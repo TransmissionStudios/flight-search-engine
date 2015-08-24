@@ -1,14 +1,42 @@
+html {
+  width: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 header {
   display: block;
   border: 1px solid red;
+  padding: 0 1em;
 }
 
 main {
   display: block;
   border: 1px solid blue;
+  padding: 0 1em;
 }
 
 aside {
   display: block;
   border: 1px solid green;
+  padding: 0 1em;
+}
+
+@media screen and (min-width: $medium) {
+  main {
+    float: right;
+    width: 80%;
+  }
+
+  aside {
+    float: left;
+    width: 20%;
+  }
 }

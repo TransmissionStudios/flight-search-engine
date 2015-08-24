@@ -1,0 +1,29 @@
+h1 {
+  display: inline-block;
+}
+
+.results__depart {
+  border: 1px solid red;
+}
+
+.results__times {
+  display: block;
+}
+
+.results__indicator {
+  display: inline-block;
+  width: 3.5em;
+}
+
+.results__time {
+  display: inline-block;
+}
+
+@media screen and (min-width: $medium) {
+  .results__depart {
+    display: inline-block;
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+  }
+}
