@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/base.css">
+  <title>Flight search engine</title>
+</head>
+<body>
+  <header class="header" role="banner">Flight Search Engine</header>
+  <main role="main" class="results">
+    <h1>Your Results</h1>
+    <div class="results__info">
+      Depart: 1st Jan 2014
+      Return: 10th Jan 2014
+    </div>
+    <!--start result-->
+    <div class="result">
+      <img src="images/logo-emirates.png" alt="Emirates" class="result__provider">
+      <div class="result__outbound">
+        <div class="result__flight-no">
+          Al-202
+        </div>
+        <div class="result__code">
+          PNQ > DEL
+        </div>
+        <div class="result__times">
+          <div class="result__indicator">
+            Depart:
+          </div>
+          <div class="result__time">
+            10:00 AM
+          </div>
+        </div>
+        <div class="result__times">
+          <div class="result__indicator">
+            Arrive:
+          </div>
+          <div class="result__time">
+            12:00 PM
+          </div>
+        </div>
+      </div>
+      <div class="result__inbound">
+        <div class="result__flight-no">
+          Al-202
+        </div>
+        <div class="result__code">
+          DEL > PNQ
+        </div>
+        <div class="result__times">
+          <div class="result__indicator">
+            Depart:
+          </div>
+          <div class="result__time">
+            10:00 AM
+          </div>
+        </div>
+        <div class="result__times">
+          <div class="result__indicator">
+            Arrive:
+          </div>
+          <div class="result__time">
+            12:00 PM
+          </div>
+        </div>
+      </div>
+      <div class="result__price">
+        £125.00
+      </div>
+      <button class="result__select">Select this flight</button>
+    </div>
+    <!--end result-->
+  </main>
+  <aside class="search"></aside>
+</body>
+</html>
